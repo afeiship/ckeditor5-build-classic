@@ -11,9 +11,9 @@
         return { key: 'beginPrice', value: '起拍价' };
       case status === 'A':
         return { key: 'currentPrice', value: '当前价' };
-      case status === 'F' && leave:
-        return { key: 'hammerPrice', value: '成交价' };
       case status === 'F' && !leave:
+        return { key: 'hammerPrice', value: '成交价' };
+      case status === 'F' && leave:
         return { key: null, value: '流拍' };
     }
   };

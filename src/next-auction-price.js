@@ -3,17 +3,15 @@
   var global = global || this || self || window;
   var nx = global.nx || require('next-js-core2');
 
-  nx.auctionPrice = function (inData) {
-    var status = inData.status;
-    var leave = inData.leave;
+  nx.auctionPrice = function (inStatus, inIsLeave) {
     switch (true) {
-      case status === 'N':
+      case inStatus === 'N':
         return { key: 'beginPrice', value: '起拍价' };
-      case status === 'A':
+      case inStatus === 'A':
         return { key: 'currentPrice', value: '当前价' };
-      case status === 'F' && !leave:
+      case inStatus === 'F' && !inIsLeave:
         return { key: 'hammerPrice', value: '成交价' };
-      case status === 'F' && leave:
+      case inStatus === 'F' && inIsLeave:
         return { key: null, value: '流拍' };
     }
   };

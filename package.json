@@ -1,30 +1,59 @@
 {
-  "name": "next-auction-price",
-  "version": "0.0.0",
-  "description": "Auction price for next",
-  "homepage": "https://github.com/afeiship/next-auction-price",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
+  "name": "@jswork/ckeditor5-custom-build",
+  "author": "CKSource",
+  "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "main": "./build/ckeditor.js",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^31.0.0",
+    "@ckeditor/ckeditor5-autoformat": "^31.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "^31.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^31.0.0",
+    "@ckeditor/ckeditor5-ckfinder": "^31.0.0",
+    "@ckeditor/ckeditor5-code-block": "^31.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^25.4.5",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^25.4.5",
+    "@ckeditor/ckeditor5-editor-classic": "^31.0.0",
+    "@ckeditor/ckeditor5-essentials": "^31.0.0",
+    "@ckeditor/ckeditor5-font": "^31.0.0",
+    "@ckeditor/ckeditor5-heading": "^31.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^31.0.0",
+    "@ckeditor/ckeditor5-html-embed": "^31.0.0",
+    "@ckeditor/ckeditor5-html-support": "^31.0.0",
+    "@ckeditor/ckeditor5-image": "^31.0.0",
+    "@ckeditor/ckeditor5-indent": "^31.0.0",
+    "@ckeditor/ckeditor5-link": "^31.0.0",
+    "@ckeditor/ckeditor5-list": "^31.0.0",
+    "@ckeditor/ckeditor5-markdown-gfm": "^31.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^31.0.0",
+    "@ckeditor/ckeditor5-page-break": "^31.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^31.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^31.0.0",
+    "@ckeditor/ckeditor5-remove-format": "^31.0.0",
+    "@ckeditor/ckeditor5-restricted-editing": "^31.0.0",
+    "@ckeditor/ckeditor5-source-editing": "^31.0.0",
+    "@ckeditor/ckeditor5-special-characters": "^31.0.0",
+    "@ckeditor/ckeditor5-table": "^31.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^31.0.0",
+    "@ckeditor/ckeditor5-typing": "^31.0.0",
+    "@ckeditor/ckeditor5-word-count": "^31.0.0",
+    "css-loader": "^5.2.7",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^4.3.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.1"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "webpack --mode production",
+    "start": "serve ."
   },
-  "main": "dist/next-auction-price.js",
-  "license": "MIT",
-  "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-size": "^2.1.0",
-    "gulp-uglify": "^2.1.2",
-    "yargs": "^4.7.1",
-    "mocha": "^3.5.0"
-  },
-  "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

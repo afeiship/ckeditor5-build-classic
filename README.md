@@ -1,12 +1,5 @@
-# next-auction-price
-> Auction price for next
+# ckeditor5-build-classic
+> Create my own CKEditor 5 build with customized plugins, toolbar and language.
 
-## install:
-```bash
-npm install -S afeiship/next-auction-price --registry=https://registry.npm.taobao.org
-```
-
-## usage:
-```js
-//DOCS here!
-```
+## online-builder
+- https://ckeditor.com/ckeditor-5/online-builder/

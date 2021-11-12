@@ -1,7 +1,8 @@
 {
   "hooks": {
     "after:init": [
-      "t2k"
+      "t2k",
+      "npm run build"
     ]
   },
   "github": {

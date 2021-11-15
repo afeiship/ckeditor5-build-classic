@@ -205,10 +205,14 @@ Editor.defaultConfig = {
   codeBlock: {
     languages: [
       { language: "plaintext", label: "Plain text" }, // The default language.
-      { language: "c", label: "C" },
       { language: "shell", label: "Shell" },
+      { language: "conf", label: "Config" },
+      { language: "apache", label: "Apache Config" },
+      { language: "ini", label: "Ini" },
+      { language: "ini", label: "Ini" },
       { language: "html", label: "HTML" },
       { language: "javascript", label: "JavaScript" },
+      { language: "typescript", label: "TypeScript" },
       { language: "css", label: "CSS" },
       { language: "java", label: "Java" },
       { language: "kotlin", label: "Kotlin" },
@@ -216,8 +220,9 @@ Editor.defaultConfig = {
       { language: "python", label: "Python" },
       { language: "ruby", label: "Ruby" },
       { language: "rust", label: "Rust" },
-      { language: "typescript", label: "TypeScript" },
       { language: "xml", label: "XML" },
+      { language: "yml", label: "Yaml" },
+      { language: "c", label: "C" },
     ],
   },
 };

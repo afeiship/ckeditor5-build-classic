@@ -145,6 +145,7 @@ Editor.defaultConfig = {
   image: {
     toolbar: [
       "imageTextAlternative",
+      "toggleImageCaption",
       "imageStyle:inline",
       "imageStyle:block",
       "imageStyle:side",

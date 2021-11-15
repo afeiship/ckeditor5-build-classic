@@ -31,19 +31,11 @@ import Link from "@ckeditor/ckeditor5-link/src/link.js";
 import LinkImage from "@ckeditor/ckeditor5-link/src/linkimage.js";
 import List from "@ckeditor/ckeditor5-list/src/list.js";
 import ListStyle from "@ckeditor/ckeditor5-list/src/liststyle.js";
-import MediaEmbed from "@ckeditor/ckeditor5-media-embed/src/mediaembed.js";
 import PageBreak from "@ckeditor/ckeditor5-page-break/src/pagebreak.js";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph.js";
 import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice.js";
 import RemoveFormat from "@ckeditor/ckeditor5-remove-format/src/removeformat.js";
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting.js";
-import SpecialCharacters from "@ckeditor/ckeditor5-special-characters/src/specialcharacters.js";
-import SpecialCharactersArrows from "@ckeditor/ckeditor5-special-characters/src/specialcharactersarrows.js";
-import SpecialCharactersCurrency from "@ckeditor/ckeditor5-special-characters/src/specialcharacterscurrency.js";
-import SpecialCharactersEssentials from "@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials.js";
-import SpecialCharactersLatin from "@ckeditor/ckeditor5-special-characters/src/specialcharacterslatin.js";
-import SpecialCharactersMathematical from "@ckeditor/ckeditor5-special-characters/src/specialcharactersmathematical.js";
-import SpecialCharactersText from "@ckeditor/ckeditor5-special-characters/src/specialcharacterstext.js";
 import StandardEditingMode from "@ckeditor/ckeditor5-restricted-editing/src/standardeditingmode.js";
 import Strikethrough from "@ckeditor/ckeditor5-basic-styles/src/strikethrough.js";
 import Subscript from "@ckeditor/ckeditor5-basic-styles/src/subscript.js";
@@ -90,19 +82,11 @@ Editor.builtinPlugins = [
   LinkImage,
   List,
   ListStyle,
-  MediaEmbed,
   PageBreak,
   Paragraph,
   PasteFromOffice,
   RemoveFormat,
   SourceEditing,
-  SpecialCharacters,
-  SpecialCharactersArrows,
-  SpecialCharactersCurrency,
-  SpecialCharactersEssentials,
-  SpecialCharactersLatin,
-  SpecialCharactersMathematical,
-  SpecialCharactersText,
   StandardEditingMode,
   Strikethrough,
   Subscript,
@@ -151,12 +135,10 @@ Editor.defaultConfig = {
       "codeBlock",
       "htmlEmbed",
       "sourceEditing",
-      "specialCharacters",
       "todoList",
       "|",
       "imageUpload",
       "insertTable",
-      "mediaEmbed",
     ],
   },
   language: "zh-cn",
@@ -167,6 +149,47 @@ Editor.defaultConfig = {
       "imageStyle:block",
       "imageStyle:side",
       "linkImage",
+    ],
+  },
+  heading: {
+    options: [
+      { model: "paragraph", title: "Paragraph", class: "ck-heading_paragraph" },
+      {
+        model: "heading1",
+        view: "h1",
+        title: "Heading 1",
+        class: "ck-heading_heading1",
+      },
+      {
+        model: "heading2",
+        view: "h2",
+        title: "Heading 2",
+        class: "ck-heading_heading2",
+      },
+      {
+        model: "heading3",
+        view: "h3",
+        title: "Heading 3",
+        class: "ck-heading_heading3",
+      },
+      {
+        model: "heading4",
+        view: "h4",
+        title: "Heading 4",
+        class: "ck-heading_heading4",
+      },
+      {
+        model: "heading5",
+        view: "h5",
+        title: "Heading 5",
+        class: "ck-heading_heading5",
+      },
+      {
+        model: "heading6",
+        view: "h6",
+        title: "Heading 6",
+        class: "ck-heading_heading6",
+      },
     ],
   },
   table: {
@@ -191,6 +214,7 @@ Editor.defaultConfig = {
       { language: "php", label: "PHP" },
       { language: "python", label: "Python" },
       { language: "ruby", label: "Ruby" },
+      { language: "rust", label: "Rust" },
       { language: "typescript", label: "TypeScript" },
       { language: "xml", label: "XML" },
     ],

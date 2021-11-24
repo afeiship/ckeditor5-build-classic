@@ -206,10 +206,6 @@ Editor.defaultConfig = {
     languages: [
       { language: "plaintext", label: "Plain text" }, // The default language.
       { language: "shell", label: "Shell" },
-      { language: "conf", label: "Config" },
-      { language: "apache", label: "Apache Config" },
-      { language: "ini", label: "Ini" },
-      { language: "ini", label: "Ini" },
       { language: "html", label: "HTML" },
       { language: "javascript", label: "JavaScript" },
       { language: "typescript", label: "TypeScript" },
@@ -221,6 +217,8 @@ Editor.defaultConfig = {
       { language: "ruby", label: "Ruby" },
       { language: "rust", label: "Rust" },
       { language: "xml", label: "XML" },
+      { language: "conf", label: "Config" },
+      { language: "ini", label: "Ini" },
       { language: "yml", label: "Yaml" },
       { language: "c", label: "C" },
     ],

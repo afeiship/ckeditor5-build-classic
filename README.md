@@ -8,3 +8,4 @@ npm i @jswork/ckeditor5-build-classic
 
 ## online-builder
 - https://ckeditor.com/ckeditor-5/online-builder/
+- https://highlightjs.org/static/demo/

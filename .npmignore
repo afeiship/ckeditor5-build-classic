@@ -1,0 +1,6 @@
+src
+sample
+.release-it.json
+.prettierrc
+package-lock.json
+webpack.config.js

@@ -41,6 +41,7 @@
     "css-loader": "^5.2.7",
     "postcss": "^8.3.11",
     "postcss-loader": "^4.3.0",
+    "prettier": "^2.5.0",
     "raw-loader": "^4.0.2",
     "release-it": "^14.11.6",
     "style-loader": "^2.0.0",

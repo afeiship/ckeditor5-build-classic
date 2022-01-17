@@ -4,3 +4,4 @@ sample
 .prettierrc
 package-lock.json
 webpack.config.js
+.idea

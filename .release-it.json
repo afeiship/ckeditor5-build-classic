@@ -1,6 +1,9 @@
 {
+  "git": {
+    "requireCleanWorkingDir": false
+  },
   "hooks": {
-    "after:init": [
+    "after:bump": [
       "t2k",
       "npm run build"
     ]

@@ -30,7 +30,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage.js';
 import List from '@ckeditor/ckeditor5-list/src/list.js';
-import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
+import ListProperties from '@ckeditor/ckeditor5-list/src/listproperties';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice.js';
@@ -45,6 +45,7 @@ import TableCaption from '@ckeditor/ckeditor5-table/src/tablecaption.js';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
+import TableColumnResize from '@ckeditor/ckeditor5-table/src/tablecolumnresize';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
@@ -81,7 +82,7 @@ Editor.builtinPlugins = [
   Link,
   LinkImage,
   List,
-  ListStyle,
+  ListProperties,
   PageBreak,
   Paragraph,
   PasteFromOffice,
@@ -96,6 +97,7 @@ Editor.builtinPlugins = [
   TableCellProperties,
   TableProperties,
   TableToolbar,
+  TableColumnResize,
   TextTransformation,
   TodoList,
   Underline,

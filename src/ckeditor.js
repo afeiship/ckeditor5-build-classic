@@ -213,6 +213,7 @@ Editor.defaultConfig = {
       { language: 'json', label: 'JSON' },
       { language: 'typescript', label: 'TypeScript' },
       { language: 'css', label: 'CSS' },
+      { language: 'dart', label: 'Dart' },
       { language: 'java', label: 'Java' },
       { language: 'go', label: 'Go' },
       { language: 'python', label: 'Python' },
